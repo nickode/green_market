@@ -1,0 +1,13 @@
+<html>
+    <head>
+        <title>Green Market</title>
+    </head>
+    <body>
+        <p>
+            <% StockData.forEach(function(stock){ %>
+                <li>Name: <%= stock.symbol %> Current Price: <%= stock.current_price %>$S Last Updated: <%= stock.last_updated %></li>
+            <% }) %>
+        </p>
+    </body>
+    
+</html>
